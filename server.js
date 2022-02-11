@@ -27,7 +27,7 @@ app.use(cors())
 
 
 //index
-app.get('/',(req,res)=>{res.send(db.users)})
+app.get('/',(req,res)=>{res.send('it is working')})
 
 //logar
 app.post('/signin', (req,res)=>{signin.handleSignin(req,res,db,bcrypt)})
